@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_purple">#3F2466</color>
+    <color name="light_gray">#bbbbbb</color>
+
+    <color name="light_purple_button">#d2e4f3</color>
+    <color name="pressed_purple_button">#9db0da</color>
+    <color name="focused_purple_button">#c3d2ed</color>
+    <color name="text_color">#250054</color>
+
+    <item name="downbar" type="color">#1a4037</item>
+    <item name="topbar" type="color">#15d2a3</item>
+
+
+
+    <integer-array name="androidcolors">
+        <item>@color/topbar</item>
+        <item>@color/downbar</item>
+
+
+    </integer-array>
+
+</resources>
