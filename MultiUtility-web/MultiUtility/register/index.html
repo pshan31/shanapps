@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>MultiUtility | Register</title>
+		<meta name="description" content="Minimal Form Interface: Simplistic, single input view form" />
+		<meta name="keywords" content="form, minimal, interface, single input, big form, responsive form, transition" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div style="background-color:white;color:black" class="codrops-top clearfix">
+				<a  style="background-color:white;color:black" class="codrops-icon codrops-icon-prev" href="../index.html"><span style="background-color:white;color:black">Back To Home</span></a>
+				<span class="right"><a  style="background-color:white;color:black" href="../login/index.html"><span style="background-color:white;color:black">Login</span></a>
+
+		</span>
+			</div>
+			<header style="background-image:url('../img/bg2.png');" class="codrops-header">
+
+				<h1 style="color:white">MultiUtility <span>Register</span></h1>	
+			</header>
+			<section>
+				<form action="hello.html" id="theForm" class="simform" autocomplete="off">
+					<div class="simform-inner">
+						<ol class="questions">
+							<li>
+								<center>
+								<span><label for="q1">Enter Username</label></span>
+								</center>
+								<input id="q1" name="q1" type="text"/>
+							</li>
+							<li>
+								<center>
+								<span><label for="q1">Enter Email</label></span>
+								</center>
+								<input id="q1" name="q1" type="text"/>
+							</li>
+							<li>
+								<center>
+								<span><label for="q1">Enter Mobile Number</label></span>
+								</center>
+								<input id="q1" name="q1" type="text"/>
+							</li>
+							<li>
+								<center>
+								<span><label for="q1">Enter Password</label></span>
+								</center>
+								<input id="q1" name="q1" type="text"/>
+							</li>
+							<li>
+								<center>
+								<span><label for="q2">Repeat Password</label></span>
+								</center>
+								<input id="q2" name="q2" type="password"/>
+							</li>
+						</ol><!-- /questions -->
+						
+						<div class="controls">
+							<button class="next"></button>
+							<div class="progress"></div>
+							<span class="number">
+								<span class="number-current"></span>
+								<span class="number-total"></span>
+							</span>
+							<span class="error-message"></span>
+						</div><!-- / controls -->
+					</div><!-- /simform-inner -->
+					<span class="final-message"><button type="submit">Send answers</button></span>
+				</form><!-- /simform -->			
+			</section>
+		</div><!-- /container -->
+		<script src="js/classie.js"></script>
+		<script src="js/stepsForm.js"></script>
+		<script>
+			var theForm = document.getElementById( 'theForm' );
+
+			new stepsForm( theForm, {
+				onSubmit : function( form ) {
+					// hide form
+					classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+					/*
+					form.submit()
+					or
+					AJAX request (maybe show loading indicator while we don't have an answer..)
+					*/
+
+					// let's just simulate something...
+					form.submit();
+				}
+			} );
+		</script>
+	</body>
+</html>
